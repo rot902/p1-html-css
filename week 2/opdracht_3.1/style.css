@@ -1,0 +1,12 @@
+body{
+    background-image: url("./img/background.png");
+    background-size: cover;
+}
+h1{
+    color: white;
+    display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 300px;
+  font-size-adjust: ;
+}
