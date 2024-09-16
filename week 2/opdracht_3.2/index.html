@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inschrijven</title>
+    <link href="style.css" rel="stylesheet"/>
+    <script src="bsn.js"></script>
+</head>
+<body>
+    <form>
+        <label for="fname">First name:</label><br>
+        <input type="text" id="fname" name="fname"><br>
+        <label for="lname">Last name:</label><br>
+        <input type="text" id="lname" name="lname"><br>
+        <input type="radio" id="vrouw" name="geslacht" value="VROUW">
+        <label for="vrouw">vrouw</label>
+        <input type="radio" id="man" name="geslacht" value="man">
+        <label for="man">man</label><br>
+        <label for="Sthu">Straat + huisnummer:</label><br>
+        <input type="text" id="Sthu" name="Sthu"><br>
+        <label for="Postcode">Postcode:</label><br>
+        <input type="text" id="Postcode" name="Postcode"><br>
+        <label for="Stad">Stad:</label><br>
+        <input type="text" id="Stad" name="Stad"><br>
+        <label for="Land">Land:</label><br>
+        <input type="text" id="land" name="Land"><br>
+        <label for="BSN">BSN nummer:</label><br>
+        <div class="quantity">
+            <button class="minus" aria-label="Decrease">&minus;</button>
+            <input type="number" class="input-box" value="10000000" min="10000000" max="999999999" id="BSN">
+            <button class="plus" aria-label="Increase">&plus;</button>
+        </div>
+        <label for="Vakantieland">Vakantieland:</label><br>
+        <select id="Vakantieland" name="vakantieland">
+            <option value="albanië">Albanië</option>
+            <option value="Roemenië">Roemenië</option>
+            <option value="Czechia">Czechia</option>
+            <option value="Polen">Polen</option>
+        </select><br>
+        <label for="vertrek">Datum van vertrek:</label>
+        <input type="date" id="vertrek" name="vertrek"><br>
+        <label for="terug">Datum van terugkomst:</label>
+        <input type="date" id="terug" name="terug"><br>
+        <label for="passagiers">Aantal passagiers:</label><br>
+        <select id="passagiers" name="passagiers">
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+        </select><br>
+        <input type="submit" value="Boek nu">
+        
+    </form>
+</body>
+</html>
