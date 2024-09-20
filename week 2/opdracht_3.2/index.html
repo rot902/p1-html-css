@@ -5,18 +5,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Inschrijven</title>
     <link href="style.css" rel="stylesheet"/>
-    <script src="bsn.js"></script>
 </head>
 <body>
     <form>
         <label for="fname">First name:</label><br>
-        <input type="text" id="fname" name="fname"><br>
+        <input type="text" id="fname" name="fname" pattern="(?=.*[a-z])(?=.*[A-Z])"><br>
         <label for="lname">Last name:</label><br>
         <input type="text" id="lname" name="lname"><br>
-        <input type="radio" id="vrouw" name="geslacht" value="VROUW">
-        <label for="vrouw">vrouw</label>
-        <input type="radio" id="man" name="geslacht" value="man">
-        <label for="man">man</label><br>
+        <label for="gender">Choose a gender:</label>
+<select id="gender">
+  <option value="Man" selected>Man</option>
+  <option value="Vrouw">Vrouw</option>
+  <option value="All">All of the above</option>
+  <option value="none of the above">None of the above</option>
+</select>
+        <option value="man" selected></option>
         <label for="Sthu">Straat + huisnummer:</label><br>
         <input type="text" id="Sthu" name="Sthu"><br>
         <label for="Postcode">Postcode:</label><br>
@@ -25,12 +28,8 @@
         <input type="text" id="Stad" name="Stad"><br>
         <label for="Land">Land:</label><br>
         <input type="text" id="land" name="Land"><br>
-        <label for="BSN">BSN nummer:</label><br>
-        <div class="quantity">
-            <button class="minus" aria-label="Decrease">&minus;</button>
-            <input type="number" class="input-box" value="10000000" min="10000000" max="999999999" id="BSN">
-            <button class="plus" aria-label="Increase">&plus;</button>
-        </div>
+        <label for="BSN" id="BSN">BSN nummer:</label><br>
+        <input max="999999999" type="text" id="BSN" name="BSN"><br>
         <label for="Vakantieland">Vakantieland:</label><br>
         <select id="Vakantieland" name="vakantieland">
             <option value="albanië">Albanië</option>
@@ -39,7 +38,7 @@
             <option value="Polen">Polen</option>
         </select><br>
         <label for="vertrek">Datum van vertrek:</label>
-        <input type="date" id="vertrek" name="vertrek"><br>
+        <input min="2024-09-19" type="date" id="vertrek" name="vertrek"><br>
         <label for="terug">Datum van terugkomst:</label>
         <input type="date" id="terug" name="terug"><br>
         <label for="passagiers">Aantal passagiers:</label><br>
@@ -49,8 +48,24 @@
             <option value="3">3</option>
             <option value="4">4</option>
         </select><br>
+        <label for="email">Enter your email:</label>
+        <input type="email" id="email" name="email"><br>
+        <label for="psw">password</label>
+        <input type="password" id="psw" name="psw" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" title="Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters" required>
+        <div id="message">
+            <h3>Password must contain the following:</h3>
+            <p id="letter" class="invalid">A <b>lowercase</b> letter</p>
+            <p id="capital" class="invalid">A <b>capital (uppercase)</b> letter</p>
+            <p id="number" class="invalid">A <b>number</b></p>
+            <p id="length" class="invalid">Minimum <b>8 characters</b></p>
+          </div>
         <input type="submit" value="Boek nu">
         
     </form>
+    <div style="display:none">
+    <audio controls loop autoplay>
+    <source src="brawl.mp3" type="audio/mp3">
+  </audio>
+</div>
 </body>
 </html>
