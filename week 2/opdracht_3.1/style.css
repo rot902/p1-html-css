@@ -19,12 +19,17 @@ ul {
   overflow: hidden;
   background-color: #00A8C7;
 }
-img{
+.logo{
   float: left;
   height: 75px;
   width:75px;
   padding: 12px;
-  margin-top: 12px;
+  margin: 12px;
+}
+img{
+  float: left;
+  height: 75px;
+  width:75px;
 }
 li {
   float: right;
@@ -45,4 +50,11 @@ li a {
 
 li a:hover {
   background-color: #00A8C7;
+}
+.html{
+  color: black;
+  display: flex;
+font-family: 'Arial', sans-serif;
+font-size: 60px;
+text-align: center;
 }
