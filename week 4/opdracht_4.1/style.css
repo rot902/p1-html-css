@@ -1,7 +1,7 @@
 h1{
     font-family: Arial, Helvetica, sans-serif;
-    font-size: 24px;
-    color: blue;
+    font-size: 50px;
+    color: yellow;
     font-weight: bold;
     font-style: italic;
 }
@@ -23,8 +23,26 @@ p{
 .first{
     font-family: Arial, Helvetica, sans-serif;
     font-weight: bold;
+    color: red;
 }
 a{
     color: #8A2BE2;
     text-decoration: none;
+}
+header{
+    background-image: url(./img/background.jpg);
+    background-repeat: no-repeat;
+    min-width: 100%;
+    min-height: 40%;
+    background-position: center;
+    background-size: cover;
+}
+img{
+    max-width: 50%;
+}
+article{
+    border: red 10px;
+    border-left: red 30px;
+    border-style: solid;
+    border-radius: 20px;
 }
