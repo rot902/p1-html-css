@@ -1,0 +1,30 @@
+#een{
+    background-color: green;
+    height: 40px;
+    width: 40px;
+    margin: 5px;
+}
+#twee{
+    background-color: red;
+    height: 40px;
+    width: 40px;
+    margin: 5px;
+}
+#drie{
+    background-color: black;
+    height: 40px;
+    width: 40px;
+    margin: 5px;
+}
+#vier{
+    background-color: blue;
+    height: 40px;
+    width: 40px;
+    margin: 5px;
+}
+.flex-container {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: flex-end;
+  }
+  
