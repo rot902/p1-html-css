@@ -27,4 +27,13 @@
     flex-direction: row-reverse;
     justify-content: flex-end;
   }
-  
+  .flex-container2 {
+    display: flex;
+    justify-content: center;
+  }
+  #begin{
+    margin-right: 25%;
+  }
+  #end{
+    margin-left: 25%
+  }
