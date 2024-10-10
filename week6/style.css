@@ -30,10 +30,16 @@
   .flex-container2 {
     display: flex;
     justify-content: center;
+    .mid{
+      justify-self: space-evenly;
+    }
   }
   #begin{
     margin-right: 25%;
   }
   #end{
     margin-left: 25%
+  }
+  div{
+    width: 50%;
   }
